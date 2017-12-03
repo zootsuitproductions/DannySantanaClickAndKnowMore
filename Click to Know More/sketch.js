@@ -25,8 +25,6 @@ var webPages = {
       counter1 = 800
       stayButton.button.hide()
       swerveButton.button.hide()
-      createCanvas(windowWidth,windowHeight)
-      background(webPages.tabsArray[webPages.currentTab][2],webPages.tabsArray[webPages.currentTab][3],webPages.tabsArray[webPages.currentTab][4])
       webPages.currentTab += 1
     }
   }
