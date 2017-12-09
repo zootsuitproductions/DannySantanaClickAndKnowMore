@@ -1,7 +1,29 @@
-///slider and scroll and button code: https://p5js.org/reference/#/libraries/p5.dom
+/*
+Title: AI: What and How?
+Imagined, Designed, and Programmed by: Daniel Santana
+Date: 12/15/17
+Description: A web page that intuitively explains AI.
+Sources of ideas and inspiration (title, author, URL):
+ * The Nature of Code, Dan Shiffman, https://www.youtube.com/watch?v=ntKn5TPHHAk
+ *
+ *
+
+Includes code from (title, author, URL):
+ * slider and scroll and button code, p5.js website, https://p5js.org/reference/#/libraries/p5.dom
+ *
+ *
+
+<Reminders, you can delete:>
+<Use command + T to auto-indent your code for cleaner formatting>
+<Check that variable and function names are easy to read and understand. eg. "squareButton" vs.
+"shapeButton2">
+<If you can't remember where you found some code, Google the text to find it.>
+<Put your name in the name of this file!>
+*/
+
+//AI image from https://futureoflife.org/background/benefits-risks-of-artificial-intelligence/
 
 var xPosition = 100
-var myP;
 var counter1 = 0
 var switchTabButton;
 var ethicsYTranslationFactor = 500;
@@ -39,10 +61,7 @@ var webPages = {
 
 function setup() {
   image = createImg('1.jpg');
-  image.position(0,300)
-  image.size(windowWidth,windowHeight*2-600)
   angleMode(DEGREES);
-  //myP = createP('Should the self-driving car prioritize the life of the driver, or should it reduce the loss of life at the expense of the driver?');
   createCanvas(windowWidth,windowHeight*2-300);
   //makes the button for the straight option
   stayButton.button = createButton(stayButton.text);
@@ -175,7 +194,7 @@ var ethicsPage = {
     fill(headerColor[0],headerColor[1],headerColor[2]);
     textSize(25);
     text("Ethical Dillemas of AI",30,100);
-    textSize(16);
+    textSize(8+windowWidth/200);
     fill(0);
     text("One ethical problem of AI arises visibly in the field of self-driving cars. In a scenario where a crash is inevitable, what should the car do? This question is fascinating \nbecause AI can be trained to act and make calculated decisions, unlike those of a human in a spontaneous situation. Here's another fascinating thought: if we declare \nthe purpose of self-driving cars as to save as many lives as possible, should it sacrifice the passengers in order to save strangers? This is a huge ethical issue, \nand even affects the economic success of the cars, decreasing the amount of people using them, and thus decreasing the ammount of lives saved. \nBy priotizing the life of the driver, some believe that more lives would be saved because more people would feel comfortable in the cards. Wouldn't it be weird to know \nthat your car didn't care about saving your life in particular? The following demonstration replicates a scenario in which a self-driving car must kil to save life.",60,120);
     fill(headerColor[0],headerColor[1],headerColor[2]-40);
