@@ -342,6 +342,7 @@ function draw() {
     makeNeuronText()
   } else if (webPages.currentTab == 2) {
     loadMainPage()
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     image.show()
     slider0.hide()
     slider1.hide()
@@ -381,7 +382,7 @@ function drawArrow() {
 function loadMainPage() {
   image.hide()
   image = createImg('1.jpg')
-  image.size(windowWidth,windowHeight-321)
+  image.size(windowWidth,windowHeight-301)
   createCanvas(windowWidth,windowHeight*2-300);
   background(backgroundColor[0],backgroundColor[1],backgroundColor[2]);
   fill(headerColor[0],headerColor[1],headerColor[2]);
@@ -523,7 +524,7 @@ var topBar = {
     textSize(30);
     text("Artificial Intelligence <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <>",10,38+y)
     if (tab == 2) {
-      switchTabButton.position(0, windowHeight-270+y);
+      switchTabButton.position(0, windowHeight-250+y);
     } else {
       switchTabButton.position(0, 51+y);
     }
