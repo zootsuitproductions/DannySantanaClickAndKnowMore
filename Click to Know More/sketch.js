@@ -5,7 +5,7 @@ Date: 12/15/17
 Description: A web page that intuitively explains AI.
 Sources of ideas and inspiration (title, author, URL):
  * The Nature of Code, Dan Shiffman, https://www.youtube.com/watch?v=ntKn5TPHHAk
- *
+ * Moral Machine, MIT university, http://moralmachine.mit.edu/
  *
 
 Includes code from (title, author, URL):
